@@ -88,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
                         //save to cache
 
                         Paper.book().write("cache",new Gson().toJson(response.body()));
+                        dialog.dismiss();
 
                     }
 
